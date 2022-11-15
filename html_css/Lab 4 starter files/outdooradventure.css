@@ -1,0 +1,225 @@
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    height: 180.6px;
+}
+.header .header_left {
+    grid-column: 1;    
+    padding-top: 80px;
+    padding-left: 10px;
+}
+.header .header_left a {
+    display: inline-block;
+    width: 81px;
+    height: 30px;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 6px;
+    border-radius: 25px;
+    border: 1px solid;
+}
+.header .header_left .h_l_a1 {
+    margin-right: 20px;
+    padding-left: 4px;
+}
+.header .header_left a:hover {
+    background-color: gray;
+    color: #000 !important;
+}
+
+.header .header_center {
+    grid-column: 2;
+    text-align: center;
+}
+.header .header_right {
+    grid-column: 3;
+    text-align: right;
+    padding-top: 80px;
+}
+.nav {
+  text-align: center;
+  margin-bottom: 18px;
+  margin-top: 37px;  
+  background-color:aliceblue;
+}
+.nav a {
+    display: inline-block;  
+    margin: 12px 29px 10px 0px;  
+    border: 1px solid #dee2e6;
+    border-radius: 2rem;
+    width: 70px;
+    height: 30px;
+    padding: 6px 10px 0 10px;
+}
+
+/*--start-main--*/
+.main {
+    display: grid;
+    grid-template-columns: 200px auto minmax(200px, 100px);
+    padding-left: 100px;
+    grid-gap: 23px;
+}
+/*main_left*/
+.main .main_left {
+    grid-column: 1;
+}
+
+/*main_center*/
+.main .main_center {
+    grid-column: 2;
+}
+
+.main .main_center .h2 {
+    text-align: center;
+    background-color: blue;
+    margin-top: 0;
+}
+.main .main_center .mc_t {
+    background-color: antiquewhite;
+    border: 2px solid;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.main .main_center .mc_t h2 {
+    text-align: center;
+}
+.main .main_center .mc_t .mc_t_ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 21px;
+    padding-right: 36px;
+}
+.main .main_center .mc_t .mc_t_ul .mc_t_ul1 {
+    border-right: 1px solid;
+    padding-right: 13px;
+    height: 115px;
+    grid-column: 1;
+}
+
+.main .main_center .mc_t .mc_t_ul .h3 {
+    margin-top: 0;
+}
+
+.main .main_center .mc_t .mc_t_ul .mc_t_ul2 {
+    padding-left: 19px;
+    grid-column: 2;
+}
+
+.main .main_center .mc_t .mc_t_ul ul {
+    padding-left: 20px;
+}
+
+/*--Start-flex_container--*/
+.main .main_center .mc_flex_container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.main .main_center .mc_flex_container .mc_flex_items {
+    border: 1px solid;
+}
+.mc_p1 img {
+    float: right;
+    margin-left: 10px;
+}
+
+.mc_p2 img {
+    float: left;
+    margin-right: 10px;
+}
+
+/*main_right*/
+.main .main_right {
+    grid-column: 3;
+    padding-right: 40px;
+}
+.main .main_right .ul {
+    padding-left: 15px;
+}
+.main .main_right .h2 {
+    margin-top: 0;
+    background-color: blue;
+    text-align: center;
+}
+
+.main .main_credits {
+    grid-column: 1 /span 3;
+    border-top: 2px solid;
+    border-bottom: 1px solid;
+    margin-right: 40px;
+    font-size: xx-small;
+}
+
+.main .main_credits .p1 {
+    text-align: center;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.main .main_credits .p2 {
+    margin: 0;
+}
+
+/*--start-Footer--*/
+.footer_grid_container {
+    display: grid;
+    grid-template-columns: 255px auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: aqua;
+    margin-top: 20px;
+    padding-bottom: 32px;
+    border-top: 2px solid;
+    border-bottom: 1px solid;
+}
+.footer_grid_container .grid_1 {
+    grid-column: 1;
+    margin-top: 20px;
+}
+.footer_grid_container .grid_2 {
+    grid-column: 2;
+}
+.footer_grid_container .grid_3 {
+    grid-column: 3;
+}
+.footer_grid_container .grid_4 {
+    grid-column: 4;
+}
+.footer_grid_container .grid_5 {
+    grid-column: 5;
+}
+
+.footer_grid_container .grid_6 {
+    grid-row: 2;
+    grid-column: 2;
+}
+.footer_grid_container .grid_7 {
+    grid-row: 2;
+    grid-column: 3;
+}
+.footer_grid_container .grid_8 {
+    grid-row: 2;
+    grid-column: 4;
+}
+.footer_grid_container .grid_9 {
+    grid-row: 2;
+    grid-column: 5;
+}
+.footer_grid_container .footer_p {
+    margin: 0;
+    font-size: medium;
+}
+.footer_grid_container .h4 {
+    margin-bottom: 0;
+    border-bottom: 1px solid;
+}
+
+@media only screen and (max-width: 70.25em) {
+    .main {
+        display: grid;
+        grid-template-columns: 200px auto minmax(200px, 100px);
+    }
+}
