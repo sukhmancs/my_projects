@@ -1,0 +1,17 @@
+/*I Sukhmanjeet Singh, Student ID 000838215 state that this is my own work and i didn't allowed anyone else to copy from it*/
+@media print {
+    .header {
+        text-align: center;
+        font-size: xx-small;
+    }
+    body {
+        color: black;
+    }
+    nav a {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
+    

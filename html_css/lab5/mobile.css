@@ -1,0 +1,60 @@
+/*I Sukhmanjeet Singh, Student ID 000838215 state that this is my own work and i didn't allowed anyone else to copy from it*/
+@media screen and (min-width:900px) {
+    nav {
+        padding: 0;
+        margin-bottom: 9px;
+        text-align: center;
+    }
+    nav a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: mediumslateblue;
+        border: 2px solid black;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0;
+        padding: 10px 14px 8px 14px;
+        font-size: 17px;
+        margin-right: 91px;
+    }
+    nav .a_Events {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    nav a{
+        display: block;
+        color: white;
+        text-decoration: none;
+        background-color: mediumslateblue;
+        border: 2px solid black;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0;
+        padding: 10px 14px 8px 14px;
+        font-size: 17px;
+        margin-right: 91px;
+    }
+   
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+    nav {
+        text-align: center;
+        margin-bottom: 9px;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+        background-color: mediumslateblue;
+        border: 2px solid black;
+        border-radius: 10px 10px 0 0;
+        border-bottom: 0;
+        padding: 10px 14px 8px 14px;
+        font-size: 17px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    nav .a_Events {
+        margin-right: 0;
+    }
+}

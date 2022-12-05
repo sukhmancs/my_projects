@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--I Sukhmanjeet Singh, Student ID 000838215 state that this is my own work and i didn't allowed anyone else to copy from it-->
+        <title>Outdoor Adventure Seminars</title>
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+                width: 100%;
+                font-family: Arial, Helvetica, sans-serif;            
+            }
+            #table2 {
+                border: none;
+                width: 80%;
+                margin-bottom: 10px;
+            }
+            #table2 .c1 {
+                border-left: 15px solid Orchid;
+                width: 16%;
+            }
+            #table2 .c2 {
+                border-left: 15px solid Cyan;
+                width: 21%;
+            }
+            #table2 .c3 {
+                border-left: 15px solid #FFFACD;
+                width: 8%;
+            }
+            #table2 .c4 {
+                border-left: 15px solid #F4AF60;
+            }
+            #table2 caption {
+                caption-side: top;
+                text-align: left;
+            }
+            thead {
+                background-color: #002759;
+                color: white;
+                height: 50px;
+            }
+            #table td, th {
+                border: 1px solid grey;
+            }
+            .table tbody th {
+                background-color: #DDEEFF;
+            }
+            .table tbody td {
+                height: 30px;
+                padding: 5px;
+                vertical-align: top;
+                width: 15%;
+            }
+            .table #row1 .c1 {
+                background-color: Orchid;
+            }
+            .table #row1 .c2 {
+                background-color: #FFFACD;
+            }
+            .table #row1 .c3 {
+                background-color: #F4AF60;
+            }
+           .table #row2 .c1-c7 {
+            background-image: url(images/dust.jpg);
+            text-align: center;
+           }
+           .table #row3 .c1, .c5 {
+            background-color: Cyan;
+           }
+           .table #row3 .c3 {
+            background-color: Orchid;
+           }
+           .table #row3 .c4 {
+            background-color: #F4AF60;
+           }
+           .table #row3 .c6-c7 {
+            background-color:blanchedalmond;
+           }
+           .table #row4 .c2 {
+            background-color: #F4AF60;
+           }
+           .table #row5 .c1 {
+            background-color: #F4AF60;
+           }
+           .table #row5 .c2-c3 {
+            background-color: Orchid;
+           }
+           .table #row6 .c2-c4 {
+            background-color: blanchedalmond;
+           }
+           .table #row6 .c5 {
+            background-color: Orchid;
+           }
+           .table #row6 .c6-c7 {
+            background-color: Cyan;
+           }
+           .table #row8 .c2-c3 {
+            background-color: Cyan;
+           }
+           .table #row8 .c4-c7 {
+            background-image: url(dust.jpg);
+            text-align: center;
+           }
+            caption {
+                caption-side: bottom;
+                text-align: right;
+            }
+        </style>
+        <link href="adventuretyle.css" rel="stylesheet">
+        <link href="mobile.css" rel="stylesheet">
+        <link href="Printstyles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1 class="h1">Outdoor Adventure Trip Seminars 2022/2023</h1>
+            </div>
+        </header>
+
+        <!--nav links-->
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Travel</a>
+            <a href="#">Photos</a>
+            <a href="#">Shop</a>
+            <a href="reviews.html" target="_self">Reviews</a>
+            <a href="seminars.html">Seminars</a>
+            <a class="a_Events" href="#">Events</a>
+        </nav>
+
+        <main>
+            <table id="table2">
+                <caption>Legend:</caption>
+                <tbody>
+                    <tr>
+                        <td class="c1">Beginner Cycling</td>
+                        <td class="c2">Long Distance Cycling</td>
+                        <td class="c3">Hiking</td>
+                        <td class="c4">Camping</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table">
+                <caption>Schedule is subject to change</caption>
+                <colgroup>
+                    
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>7am-9am</th>
+                        <th>9am-11am</th>
+                        <th>11am-12pm</th>
+                        <th>12pm-2pm</th>
+                        <th>2pm-4pm</th>
+                        <th>6pm-8pm</th>
+                        <th>8pm-10pm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--row 1 Monday-->
+                    <tr id="row1">
+                        <th>Monday</th>
+                        <td class="c1">Beginner Cycling</td>
+                        <td class="c2">Hiking</td>
+                        <td class="c3" colspan="5">Camping</td>
+                    </tr>
+                    
+                    <!--row 2 Tuesday-->
+                    <tr id="row2">
+                        <th>Tuesday</th>
+                        <td class="c1-c7" colspan="7">Reserved for groups</td>
+                    </tr>
+
+                    <!--row 3 Wednesday-->
+                    <tr id="row3">
+                        <th>Wednesday</th>
+                        <td class="c1" rowspan="2">Long Distance Cycling Part 1</td>
+                        <td></td>
+                        <td class="c3">Beginner Cycling</td>
+                        <td class="c4" rowspan="2">Camping in Asia</td>
+                        <td class="c5" rowspan="2">Long Distance Cycling Part 2</td>
+                        <td class="c6-c7" colspan="2" rowspan="3">Hiking</td>
+                    </tr>
+
+                    <!--row 4 Thursday-->
+                    <tr id="row4">
+                        <th>Thursday</th>
+                        <td class="c2">Camping</td>
+                        <td></td>
+                    </tr>
+                    
+                    <!--row 5 Friday-->
+                    <tr id="row5">
+                        <th>Friday</th>
+                        <td class="c1" rowspan="4">Camping in Europe</td>
+                        <td class="c2-c3" colspan="2">Beginner Cycling</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                    <!--row 6 Saturday-->
+                    <tr id="row6">
+                        <th>Saturday</th>
+                        <td class="c2-c4" rowspan="2" colspan="3">Hiking</td>
+                        <td class="c5">Bigenner Cycling</td>
+                        <td class="c6-c7" colspan="2" rowspan="2">Long Distance Cycling PArt 1 and 2</td>
+                    </tr>
+                    
+                    <!--row 7 Sunday-->
+                    <tr id="row7">
+                        <th>Sunday</th>
+                        <td></td>
+                    </tr>
+                    
+                    <!--row 8 Holidays-->
+                    <tr id="row8">
+                        <th>Holidays</th>
+                        <td class="c2-c3" colspan="2">Long Distance Cycling</td>
+                        <td class="c4-c7" colspan="4">No Seminars</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer class="footer">
+            <img src="images/outdooradventurehorizontal.png" alt="outdooradventure">
+        </footer>
+    </body>
+</html>

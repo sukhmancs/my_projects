@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--I Sukhmanjeet Singh, Student ID 000838215 state that this is my own work and i didn't allowed anyone else to copy from it-->
+        <title>Outdoor Adventure Reviews</title>
+        <style>
+            form {
+                background-color:rgb(90, 14, 161);
+                color: white;
+                border: solid black;
+                padding: 15px;
+            }
+            #About_You input {
+                background-color: orchid;
+                border: 2px solid black;
+            }
+            .screencapture {
+                text-align: center;
+                margin: 10px 0 10px 0;
+            }
+            #About_You label {
+                display: inline-block;
+                text-align: right;
+                margin-right: 10px;
+                width: 130px;
+                margin-bottom: 5px;
+            }
+            .section {
+                margin-top: 15px;
+            }
+            .section .btn {
+                background-color: orchid;
+                border: 1px solid black;
+            }
+        </style>
+        <link href="adventuretyle.css" rel="stylesheet">
+        <link href="mobile.css" rel="stylesheet">
+        <link href="Printstyles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div class="header">
+                <h1 class="h1">Outdoor Adventure Trip Reviews 2022/2023</h1>
+            </div>
+        </header>
+
+        <!--nav links-->
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Travel</a>
+            <a href="#">Photos</a>
+            <a href="#">Shop</a>
+            <a href= "reviews.html">Reviews</a>
+            <a href="seminars.html" target="_self">Seminars</a>
+            <a class="a_Events" href="#">Events</a>
+        </nav>
+
+        <main>
+            <!--Form-->
+            <form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+                <input type="hidden" name="formname" value="Sukhmanjeet Singh Trip Review">
+                <fieldset id="About_You">
+                    <legend>About You</legend>
+                    <div class="dropdown">
+                        <legend>I usually prefer to trips this time of year (select all that apply):</legend>
+                        <select name="dropdown" size="4">
+                            <option>Winter</option>
+                            <option>Spring</option>
+                            <option>Summer</option>
+                            <option>Fall</option>
+                        </select>
+                    </div>
+                    <div class="aboutyou">
+                        <div class="First_Name">
+                            <label>First Name</label>
+                            <input type="text" id="first_name" name="first_name" maxlength="20">
+                        </div>
+                        <div class="Last_Name">
+                            <label>Last Name</label>
+                            <input type="text" id="Last_Name" name="Last_Name" maxlength="20">
+                        </div>
+                        <div class="Phone_Number">
+                            <label>Phone Number</label>te specifies the maximum number of chara
+                            <input type="text" id="Phone_Number" name="Phone_Number" placeholder="123-456-7890" size="12" maxlength="12">
+                        </div>
+                        <div class="Email_Address">
+                            <label>Email Address</label>
+                            <input type="email" id="Email_Address" name="Email_Address" placeholder="name@example.com" size="40" maxlength="40">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset id="Trip_Reviews">
+                    <legend>Trip Reviews</legend>
+                    <select name="trip_reviews">
+                        <option>Alberta Rural</option>
+                        <option selected>B.C. Coast</option>
+                        <option>Ontario Lake Superior</option>
+                        <option>PEI</option>
+                        <option>Nova Scotia Cabot Trail</option>
+                    </select>
+                    <select name="trip_days">
+                        <option value="5d" selected>5 Days</option>
+                        <option value="7d">7 Days</option>
+                        <option value="10d">10 Days</option>
+                        <option value="14d">14 Days</option>                
+                    </select>
+                    <div class="Your_rating">
+                        <legend>Your rating:</legend>
+                        <div class="4_ratings">
+                            <input type="radio" name="ratings" id="4r" value="4" checked>
+                            <label for="4r">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                            </label>
+                        </div>
+                        <div class="3_ratings">
+                            <input type="radio" name="ratings" id="3r" value="3">
+                            <label for="3r">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                            </label>
+                        </div>
+                        <div class="2_ratings">
+                            <input type="radio" name="ratings" id="2r" value="2">
+                            <label for="2r">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                            </label>
+                        </div>
+                        <div class="1_rating">
+                            <input type="radio" name="ratings" id="1r" value="1">
+                            <label for="1r">
+                                <img src="images/wheel_sm.jpg" alt="wheel_sm">
+                            </label>
+                        </div>
+                    </div>
+                    <legend>Comments</legend>
+                    <textarea name="comments" cols="65" rows="7"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>I would be interested in these trips: (check all that apply</legend>
+                    <div><input type="checkbox" name="check" id="slc" value="seaorlakecoast">
+                    <label for="slc">Sea or Lake Coast</label>
+                    </div>
+                    <div><input type="checkbox" name="check" id="rural" value="rural">
+                    <label for="rural">Rural</label>
+                    </div>
+                    <div><input type="checkbox" name="check" id="mountains" value="mountains" checked>
+                    <label for="mountains">Mountains</label>
+                    </div>
+                    <div><input type="checkbox" name="check" id="other" value="other">
+                    <label for="other">Other (please specify)</label>
+                    <input type="text" name="check">
+                    </div>
+                </fieldset>
+                <section class="section">
+                    <input type="submit" class="btn" value="SEND REVIEW">
+                    <input type="reset" class="btn" value="CANCEL">
+                </section>
+            </form>
+            <div class="screencapture">
+            <img class="screencapture" src="images/screencapture_Seminars.png" alt="screencapture">
+            </div>
+        </main>
+        <footer class="footer">
+            <img src="images/outdooradventurehorizontal.png" alt="outdooradventure">
+        </footer>
+    </body>
+</html>

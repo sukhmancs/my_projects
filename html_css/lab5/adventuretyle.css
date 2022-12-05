@@ -1,0 +1,20 @@
+/*I Sukhmanjeet Singh, Student ID 000838215 state that this is my own work and i didn't allowed anyone else to copy from it*/
+.header {
+    text-align: center;
+    background-color: #e9efff;
+}
+body {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+main {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+footer {
+    border-top: 3px solid black;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
