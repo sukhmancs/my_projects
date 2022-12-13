@@ -1,0 +1,9 @@
+/* <!-- Author: Sukhmanjeet Singh, 000838215 */
+@media print {
+    .header .map {
+        display: none;
+    }
+    .c3 img {
+        display: none;
+    }
+}

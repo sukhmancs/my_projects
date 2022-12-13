@@ -1,0 +1,155 @@
+<!-- Author: Sukhmanjeet Singh, 000838215 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sandy and Leslie's apartment</title>
+        <style>
+            .footer_apartment {
+            font-size: small;
+            text-align: center;
+            margin-top: 50px;
+        }
+        </style>
+        <link href="apartment_layout.css" rel="stylesheet">
+        <link href="mobile.css" rel="stylesheet">
+        <link href="print.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--header
+            nav
+            main (Welcome Message-gallery)
+            footer-->
+        <header class="header">
+            <h1>Sandy and Leslie's Apartment</h1>
+            <p class="_p">Click a room for a detailed view.</p>
+            <div class="map">
+                <img src="images/apartmentfloorplan.jpg" title="apartment" alt="apartment" usemap="#maps">
+                <map name="maps">
+                    <area href="bedroom.html" target="_self" alt="bedroom" title="bedroom 1" shape="rect" coords="42,105,185,267">
+                    <area href="bedroom.html" target="_self" alt="bedroom" title="bedroom 2" shape="poly" coords="391,106,554,104,579,306,503,309,488,237,397,238">
+                    <area href="livingroom.html" target="_self" alt="livingroom" title="livingroom" shape="rect" coords="197,106,345,276">
+                    <area href="kitchen.html" target="_self" alt="kitchen" title="kitchen" shape="rect" coords="186,293,289,388">
+                    <area href="dinningroom.html" target="_self" alt="dinningroom" title="dinningroom" shape="circle" coords="343,336,44">
+                </map>
+            </div><!--div map ends-->
+        </header>
+        <nav class="nav">
+            <a href="apartment.html" title="apartmentfloor">Apartment</a>
+            <a href="bedroom.html" title="Bedroom_1">Bedroom 1</a>
+            <a href="bedroom.html" title="Bedroom_2">Bedroom 2</a>
+            <a href="dinningroom.html" title="Dining Room">Dining Room</a>
+            <a href="kitchen.html" title="Kitcher">Kitchen</a>
+            <a class="a_last" href="livingroom.html" title="Living_room">Living Room</a>
+        </nav>
+
+        <!--main-->
+        <main>
+            <div class="container">
+                <div class="c1">
+                    <div class="r1">
+                        <h2 class="h2">Welcome Message</h2>
+                        <audio controls>
+                            <source src="apartment.mp3" type="audio/mp3">
+                            Your browser does not support audio element.
+                        </audio>
+                        <p>Transcirpt. Hello. Welcome to our apartment. You'll really enjoy living here. The rooms are spacious and the apartment building amenities are fantastic. We look forward to hearing from you!</p>
+                    </div>
+                    <div class="r2">
+                        <h2 class="h2">Survey</h2>
+                        <p>How did you find out about this apartment? Check any that apply:</p>
+                        <form method="post" action="https://csunix.mohawkcollege.ca/tooltime/showit.pl">
+                            <fieldset id="Survey">
+                                <input type="checkbox" name="Survey" id="sw" value="Websearch">
+                                <label for="sw">Web search</label>
+                                <input type="checkbox" name="Survey" id="sf" value="friend">
+                                <label for="sf">Friend</label>
+                                <input type="checkbox" name="Survey" id="sn" value="Newspaper">
+                                <label for="sn">Newspaper</label>
+                            </fieldset>
+                            <section class="section">
+                                <input type="submit" class="btn" value="SUBMIT">
+                                <input type="reset" class="btn" value="CANCEL">                                
+                            </section>
+                        </form>
+                    </div>
+                </div>
+                <div class="c2">
+                    <h2 class="h2">Apartment services:</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Day/Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--row 1 Gym-->
+                            <tr>
+                                <th>Gym</th>                                
+                                <td rowspan="2"><br>Monday-Friday 6am - 10pm<br>
+                                                Saturday 8am - 8pm<br> 
+                                                Sunday 8am - 5pm<br><br>
+                                </td>
+                            </tr>
+
+                            <!--row 2 Pool-->
+                            <tr>
+                                <th>Pool</th>                                
+                            </tr>
+
+                            <!--row 3 Laundry-->
+                            <tr>
+                                <th>Laundry</th>
+                                <td>24/7</td>
+                            </tr>
+
+                            <!--row 4 no heading-->
+                            <tr id="row4">
+                                <td colspan="2">Please do not allow people you do not know to use these facilities</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="c3">
+                    <h2 class="h2">Location</h2>
+                    <img src="images/location.png" alt="location.png" title="location">
+                </div>
+                <div class="Gallery">
+                    <h2 class="h2">Gallery</h2>
+                    <div class="Gallery_flex">
+                        <div class="Balcony">
+                            <h3>Balcony</h3>
+                            <img src="thumbnails/balcony_sm.jpg" alt="balcony.jpg" title="balcony">
+                        </div>                    
+                        <div class="Bathroom">
+                            <h3>Bathroom</h3>                    
+                            <img src="thumbnails/bathroom_sm.jpg" alt="Bathroom.jpg" title="Bathroom">    
+                        </div>
+                        <div class="Bedroom">
+                            <h3>Bedroom</h3>
+                            <img src="thumbnails/bedroom_sm.jpg" alt="Bedroom.jpg" title="Bedroom">
+                        </div>
+                        <div class="Dining_Room">
+                            <h3>Dining Room</h3>
+                            <img src="thumbnails/diningroom_sm.jpg" alt="Dining_room.jpg" title="Dining Room">
+                        </div>
+                        <div class="Kitchen">
+                            <h3>Kitchen</h3>
+                            <img src="thumbnails/kitchen_sm.jpg" alt="Kitchen.jpg" title="Kitchen">
+                        </div>
+                        <div class="Living_Room">
+                            <h3>Living Room</h3>
+                            <img src="thumbnails/livingroom_sm.jpg" alt="Living_room.jpg" title="Living Room">
+                        </div>
+                    </div><!--Gallery_flex-->
+                </div><!--Gallery end-->
+            </div><!--main container-->
+        </main>
+
+        <!--footer-->
+        <footer class="footer_apartment">
+            <p>For more information contact: <a href="mailto:s.sukhmanjeet-singh@mohawkcollege.ca">SandyAndLeslle@example.com</a> or <a href="tel:(905)555-1234">(905) 555-1234</a></p>
+            <p>&copy; Sandy and Leslle 2022</p>
+        </footer>
+    </body>
+</html>

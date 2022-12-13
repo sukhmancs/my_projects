@@ -1,0 +1,89 @@
+<!-- Author: Sukhmanjeet Singh, 000838215 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sandy and Leslie's apartment</title>
+        <link href="apartment_layout.css" rel="stylesheet">
+        <style>
+            @media screen and (max-width: 600px) {
+            .header .map {
+                display: none;
+            }
+            .nav a {
+                display: block;
+                border-right: none;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Sandy and Leslie's Apartment</h1>
+            <div class="map">
+                <img src="images/apartmentfloorplan.jpg" title="apartment" alt="apartment" usemap="#maps">
+                <map name="maps">
+                    <area href="bedroom.html" target="_self" alt="bedroom" title="bedroom 1" shape="rect" coords="42,105,185,267">
+                    <area href="bedroom.html" target="_self" alt="bedroom" title="bedroom 2" shape="poly" coords="391,106,554,104,579,306,503,309,488,237,397,238">
+                    <area href="livingroom.html" target="_self" alt="livingroom" title="livingroom" shape="rect" coords="197,106,345,276">
+                    <area href="kitchen.html" target="_self" alt="kitchen" title="kitchen" shape="rect" coords="186,293,289,388">
+                    <area href="dinningroom.html" target="_self" alt="dinningroom" title="dinningroom" shape="circle" coords="343,336,44">
+                </map>
+            </div><!--ends map div-->
+        </header>
+        <nav class="nav">
+            <a href="apartment.html" title="apartmentfloor">Apartment</a>
+            <a href="bedroom.html" title="Bedroom_1">Bedroom 1</a>
+            <a href="bedroom.html" title="Bedroom_2">Bedroom 2</a>
+            <a href="dinningroom.html" title="Dining Room">Dining Room</a>
+            <a href="kitchen.html" title="Kitcher">Kitchen</a>
+            <a class="a_last" href="livingroom.html" title="Living_room">Living Room</a>
+        </nav>
+        <div class="image">
+            <h2>Bedroom Details</h2>
+            <img src="images/bedroom_lg.jpg" alt="bedroom.jpg" title="bedroom">
+        </div>
+        <div>
+            <h2 class="h2">Apartment services:</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Day/Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--row 1 Gym-->
+                    <tr>
+                        <th>Gym</th>                                
+                        <td rowspan="2"><br>Monday-Friday 6am - 10pm<br>
+                                        Saturday 8am - 8pm<br> 
+                                        Sunday 8am - 5pm<br><br>
+                        </td>
+                    </tr>
+
+                    <!--row 2 Pool-->
+                    <tr>
+                        <th>Pool</th>                                
+                    </tr>
+
+                    <!--row 3 Laundry-->
+                    <tr>
+                        <th>Laundry</th>
+                        <td>24/7</td>
+                    </tr>
+
+                    <!--row 4 no heading-->
+                    <tr id="row4">
+                        <td colspan="2">Please do not allow people you do not know to use these facilities</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!--footer-->
+        <footer class="footer">
+            <p>For more information contact: <a href="mailto:s.sukhmanjeet-singh@mohawkcollege.ca">SandyAndLeslle@example.com</a> or <a href="tel:(905)555-1234">(905) 555-1234</a></p>
+            <p>&copy; Sandy and Leslle 2022</p>
+        </footer>
+    </body>
+</html>
