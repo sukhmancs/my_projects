@@ -1,0 +1,119 @@
+/*Sukhmanjeet Singh, 000838215, state that this code is my own and i did not copied from any other place*/
+/* ANIMATIONS */
+
+:root {
+    --primary-color: blueviolet;
+    --secondary-color: rgb(66, 36, 94);
+    --disabled-color: gray;
+}
+
+@keyframes roll {
+    0% {transform: translateX(0px) rotate(0deg);}
+    25% {transform: translateX(100px) rotate(180deg);}
+    50% {transform: translateX(100px) rotate(180deg) scale(0.6);}
+    75% {transform: translateX(0px) rotate(360deg) scale(1);}
+    100% {transform: translateX(0px) rotate(0deg);}
+}
+
+@keyframes button-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes change-color {
+    0% {
+        background-color: var(--primary-color); 
+    }
+    100% {
+        background-color: var(--secondary-color);
+    }
+}
+
+/* CONTAINER */
+.container {
+    margin: 0;
+    width: fit-content;
+    max-width: fit-content;
+    padding: 0;
+}
+
+/* HEADER */
+header {
+    animation: roll 20s ease-in-out infinite;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* NAV */
+.nav {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.nav a {
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover {
+    animation: change-color 0.5s forwards ease-out;
+}
+
+nav a:active {
+    background-color: var(--disabled-color);
+    color: blue;
+}
+
+nav a:focus {
+    animation: button-pop 0.5s forwards;
+}
+
+nav a.disabled {
+    pointer-events: none;
+    cursor: default;
+    background-color: var(--disabled-color);
+}
+
+/* MAIN */
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    min-height: 100vh;
+    background-color: #ecebe7;
+    padding: 20px;
+}
+
+main .paragraphs {
+    grid-column: 1;
+    margin-right: 20px;
+    font-family: 'Proxima Nova', 'Brandon Grotesque';
+}
+
+main a {
+    grid-column: 2;
+}
+
+main a img {
+    width: 200px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+    margin: 0 20px 0 20px;
+}
