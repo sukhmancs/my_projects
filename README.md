@@ -9,5 +9,6 @@ This folder contains projects finished using Google Colaboratory. It includes:
 - maths_questions_solver.ipynb: This notebook solves mathematic problems such as finding missing digits from a given number for it to be divisible by another number, finding sum of any sequence of numbers, etc.
 - Data_exploration_using_titanic_dataset.ipynb: This notebook contains some of the most important steps to understand data. It also contains code to deal with duplicates, recognizing and treating missing or NAN values.
 - TypingSpeedTester.ipynb: Basic typing speed tester. 
+- patient_survived_prediction.ipynb: Using custom data to predict patient survival rate based on number of diseases he have. 
 ### html_css:
 This folder contains projects about HTML/CSS, javascript and Bootstrap. It contains Lab3, Lab4, Lab5, Lab6 folders each having unique website designs.  
