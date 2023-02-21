@@ -1,0 +1,155 @@
+<!-- I, Sukhmanjeet Singh Student id: 000838215, acknowledge that this file contains my own code and I did not copied from other source-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment2</title>
+
+        <!-- Booststrap css and js-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+        <!-- custom css and javascript files -->
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="app.js"></script>
+
+       <!-- Animation CSS-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <!-- Google fonts Poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+        <!-- FontAwesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />                
+    </head>
+    <body class="main-content">
+
+        <!-- Horizontal Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">SUKHMAN</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                  </li>                  
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Fixed width container -->
+        <div class="container mt-2">
+
+            <!-- FLex box, column wise -->
+            <div class="d-flex flex-column">
+
+                <!-- Flex item 1 -->
+                <div class="p-2 shadow mb-4 bg-body-tertiary rounded">
+                    <img src="images/girlimage.png" class="img-rounded w-25 float-start" alt="girlimage">
+                    <p class="text-end mt-5 display-1 animate__animated animate__zoomInDown">Hi there!</p>
+                    <h2 class="text-end">This website is for my college project.</h2>
+                    
+                </div>
+
+                <!-- Flex item 2 -->
+                <div class="p-2 shadow mb-4 rounded">
+                    <p>Hi there My name is Sukhmanjeet Singh. Student ID : 000838215</p>
+                </div>
+
+                <!-- Flex item 3, Flex box-->
+                <div class="p-2 d-flex flex-wrap shadow rounded">
+
+                    <!-- Flex item 1, card 1-->
+                    <div class="p-2 card shadow border-0 m-3">
+                        <h5 class="card-title">Group 1 - Question 1
+                            <a href="#" data-toggle="tooltip" title="Read the input from the document, if the input is numeric and if the input is 0, or if it’s between 13 and 17 inclusive, output “In range” otherwise output “Out of range”. If it’s not a number output “Not a number”."><i class="fas fa-question-circle animate__animated animate__bounce animate__repeat-2 animate__delay-3s 2"></i></a>
+                        </h5>
+                        <label for="g1_q1_input">Input :</label>
+                        <input type="text" id="g1_q1_input" onchange="checkInput()" placeholder="Ex. 13 or 0">
+                        <button id="g1_q1_check" type="button" onclick="checkInput()" class="btn btn-primary m-2">Check</button>
+                        <textarea id="g1_q1_output" placeholder="Output will be visible here." readonly></textarea>
+                    </div>
+
+                    <!-- Flex item 2, card 2-->
+                    <div class="p-2 card border-0 shadow m-3" >
+                        <h5 class="card-title">Group 1 - Question 3
+                            <a href="#" data-toggle="tooltip" title="Read the input from the document and interpret it as the length of the side of a square if it is numeric and greater than or equal to 0. Output the perimeter (4*side) and area (side*side) of the square. If it is not a number output “Can’t calculate”."><i class="fas fa-question-circle"></i></a>
+                        </h5>
+                        <label for="g1_q3_input">Input :</label>
+                        <input type="text" id="g1_q3_input" onchange="calculateArea()" placeholder="Ex. 5">
+                        <button id="g1_q3_check" onclick="calculateArea()" type="button" class="btn btn-primary m-2">Check</button>
+                        <textarea id="g1_q3_output" placeholder="Output will be visible here." readonly></textarea>
+                    </div>
+                    
+                    <!-- Flex item 3, card 3-->
+                    <div class="p-2 card shadow border-0 m-3">
+                        <h5 class="card-title">Group 2 - Question 1
+                            <a href="#" data-toggle="tooltip" title="Read the input from the document and if the input is “a”, “e”, “i”, “o”, or “u” output “A Vowel”. If the input is “y” output “Sometimes”. In all other cases output “Not a vowel”. Your function should be case insensitive, i.e., “A” or “a” would both show “A Vowel”."><i class="fas fa-question-circle"></i></a>
+                        </h5>
+                        <label for="g2_q1_input">Input :</label>
+                        <input type="text" onchange="checkVowel()" id="g2_q1_input" placeholder="Ex. a or y">
+                        <button id="g2_q1_check" onclick="checkVowel()" type="button" class="btn btn-primary m-2">Check</button>
+                        <textarea id="g2_q1_output" placeholder="Output will be visible here."  readonly></textarea>
+                    </div>
+
+                    <!-- Flex item 4, card 4-->
+                    <div class="p-2 card shadow border-0 m-3">
+                        <h5 class="card-title">Group 2 - Question 2
+                            <a href="#" data-toggle="tooltip" title="Read the input from the document. If it is an integer, split the absolute value of the integer apart and add up all the digits. If the resulting sum is greater than 9, repeat this process until the result is a single digit. Output the result of the calculation. If the original input was not an integer output “Bad input.”"><i class="fas fa-question-circle"></i></a>
+                        </h5>
+                        <label for="g2_q2_input">Input :</label>
+                        <input type="text" onchange="calculateSum()" id="g2_q2_input" placeholder="Ex. 55">
+                        <button id="g2_q2_check" onclick="calculateSum()" type="button" class="btn btn-primary m-2">Check</button>
+                        <textarea id="g2_q2_output" placeholder="Output will be visible here." readonly></textarea>
+                    </div>
+
+                    <!-- Flex item 5, card 5-->
+                    <div class="p-2 card shadow border-0 m-3">
+                        <h5 class="card-title">Group 3 - Question 1
+                            <a href="." data-toggle="tooltip" title="Read the input from the document. This string must be between 10 and 20 characters long, inclusive, and consist of only 0’s and 1’s. If the string does not meet these conditions, output the result 0. If the input is valid then interpret it as a binary number. Using only loops and substring operations calculate the integer value of the binary number. For simplicity, we will assume “little endian” numbers ... the smallest number is on the left and get bigger moving to the right. Recall that binary values are powers of 2, with the first few values being 20 = 1, 21 = 2, 20 + 21 = 3, etc. "><i class="fas fa-question-circle"></i></a>
+                        </h5>
+                        <label for="g3_q1_input">Input :</label>
+                        <input type="text" onchange="binaryToDecimal()" id="g3_q1_input" placeholder="Ex. 110111000010100">
+                        <button id="g3_q1_check" onclick="binaryToDecimal()" type="button" class="btn btn-primary m-2">Check</button>
+                        <textarea id="g3_q1_output" placeholder="Output will be visible here." readonly></textarea>
+                    </div>
+                </div>                
+            </div>    
+            
+            <!-- Verticle Navbar inside container -->
+            <nav class="nav flex-column rounded">
+                <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a>
+                <a href="#" class="nav-link"><i class="fab fa-reddit"></i></a>
+                <a href="#" class="nav-link"><i class="fas fa-rss"></i></a>
+            </nav>            
+
+            <!-- footer -->
+            <footer class="border-top mt-3 rounded shadow text-center h6">
+              &copy; 2023, Sukhmanjeet Singh, Mohawk College
+            </footer>
+        </div>          
+    </body>
+</html>

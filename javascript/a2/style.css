@@ -1,0 +1,64 @@
+/*I, Sukhmanjeet Singh Student id: 000838215, acknowledge that this file contains my own code and I did not copied from other source*/
+:root {
+    --color-primary: #191d2b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    transition: all 4s ease-in-out;
+}
+
+.container a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header {
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem 18rem;
+}
+
+.flex-row .p-2 {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.container nav {
+    position: fixed;
+    top: 30%;
+    left: 95%;
+    background: grey;
+}
+
+.container .nav-link {
+    color: white;
+}
+
+.nav a:hover {
+    background-color: aquamarine;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:990px) {
+    .container nav {
+        display: none;
+    }
+    
+    .container {
+        margin-top: 0px !important;
+    }
+}
+

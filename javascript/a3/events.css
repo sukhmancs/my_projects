@@ -1,0 +1,28 @@
+img {
+    width: 30%;
+}
+
+#countDown {
+    background-color: blue;
+    color: white;
+    width: 80px;
+    
+}
+
+.d-flex {
+    height:300px;
+}
+
+@media screen and (max-width: 532px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    img {
+        width: 50%;
+        overflow: hidden;
+        margin-bottom: 3px;
+    }
+    
+}
