@@ -1,53 +1,51 @@
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        /**
-         * The main method asks the user to enter the number of dice and number of sides for each die. Then it
-         * should create the DiceCollection and print it to the screen. Then it should present a menu in a loop that
-         * allows them to roll once or roll 100,000 times. The main method should do no calculations at all.
-         * If they choose to roll once, show the result by printing the dice they got and the sum. If choose 100,000
-         * rolls, call the histogram method described above, and print the non-zero elements of the array, as
-         * shown in the example output.
-         */
-
+        // Declare and initialize Scanner object
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of dice: ");
         int dice = sc.nextInt();
 
         System.out.print("Enter the number of sides for each die (separated by a comma): ");
-        String[] Sides = sc.next().split(",");
-        int[] dieSides = new int[Sides.length];
+        String[] sides = sc.next().split(",");
+
+        // initialize dieSides array containing integer values of die sides
+        int[] dieSides = new int[sides.length];
 
         // convert string array to array of integers
-        for (int i = 0; i < Sides.length; i++) {
-            dieSides[i] = Integer.parseInt(Sides[i]);
+        for (int i = 0; i < sides.length; i++) {
+            dieSides[i] = Integer.parseInt(sides[i]);
         }
 
+        // Initialize DiceCollection objects to the number of sides
         DiceCollection dC = new DiceCollection(dieSides);
         Die[] dieArray = dC.getDie();
-        System.out.print("Dice Collection: ");
+        System.out.print("\nDice Collection: ");
 
         // Get total number of sides and the current side of die
         for (int i = 0; i < dice; i++) {
+
+            // get current and number of sides
             System.out.print("d" + dieArray[i].getSides() + "=" + dieArray[i].getCurrentSide() + " ");
         }
+
+        // get overall min and max sum of dies
         System.out.println("\nMIN=" + dC.getMinPossibleSum() + " MAX=" + dC.getMaxPossibleSum() + " current=" + dC.getCurrentSumOfSides());
 
-        boolean x = true;
-        while (x) {
+        // continue loop until user quit or enters 3
+        while (true) {
 
             // ask how many times to roll
-            System.out.print("1=roll once, 2=roll 100000 times, 3=quit: ");
+            System.out.print("\n1=roll once, 2=roll 100000 times, 3=quit: ");
             int roll = sc.nextInt();
 
+            // if pressed 3 quit
             if (roll == 3) {
-                x = false;
+                System.out.println("BYE!!");
                 break;
-            } else if (roll == 2) {
+            } else if (roll == 2) { // if enter 2 roll 100000 times
 
                 // get maximum rolls allowed
                 int rolls = dC.getMAXROLL();
@@ -58,22 +56,31 @@ public class Main {
                 // get array of sum of current sides everytime die is rolled
                 int [] sums = dC.getSums();
 
-                // Create an array of indices
-                Integer[] indices = new Integer[counter.length];
-                for (int i = 0; i < indices.length; i++) {
-                    indices[i] = i;
-                }
+                // use bubbleSort algorithm to sort second array based on first array in increasing order
+                dC.bubbleSort(sums, counter);
 
                 // Rearrange the elements of arr2 based on the sorted indices array
                 for (int i = 0; i < counter.length; i++) {
 
                     // only display counter that is not zero
                     if (counter[i] !=  0) {
-                        System.out.println(String.format("counter: %d Sums: %d  %s",
-                                counter[i], sums[i], "*".repeat(sums[i])));
+                        System.out.println(String.format("Sums: %4d  Counter: %8d  %s",
+                                sums[i], counter[i], "*".repeat(sums[i])));
                     }
                 }
-            } else {
+
+                System.out.print("\nDice Collection: ");
+
+                // Get total number of sides and the current side of die
+                for (int i = 0; i < dice; i++) {
+                    System.out.print("d" + dieArray[i].getSides() + "=" + dieArray[i].getCurrentSide() + " ");
+                }
+                System.out.println("\nMIN=" + dC.getMinPossibleSum() + " MAX=" + dC.getMaxPossibleSum() + " current=" + dC.getCurrentSumOfSides());
+            } else if (roll == 1) { // roll only once
+
+                // roll all the dice once
+                dC.rollAllDice();
+                System.out.print("\nDice Collection: ");
 
                 // Get total number of sides and the current side of die
                 for (int i = 0; i < dice; i++) {

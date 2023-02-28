@@ -4,14 +4,11 @@
  * @author SUKHMANJEET SINGH
  */
 public class Die{
-    /**
-     * A Die object can have any integer number of sides. The number of sides is specified when a Die is
-     * created and cannot be changed. A Die can report its number of sides, can report the side that is
-     * currently showing, and can be rolled. When a die is rolled, it generates and stores a new integer from 1
-     * to n, where n is its number of sides. It has a toString() method that reports the number of sides and the
-     * number that is currently showing. That’s all it can do.
-     */
+
+    // to store number of sides on this die
     private int sides;
+
+    // to store the current side after roll on this die
     private int currentSide;
     /**
      * Constructor of this class
@@ -19,6 +16,8 @@ public class Die{
      */
     public Die(int sides) {
         this.sides = sides;
+
+        // set the current side to random value greater than one but less than number of sides
         this.currentSide = (int)(Math.random() * this.sides) + 1;
     }
 
