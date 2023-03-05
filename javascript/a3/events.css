@@ -1,16 +1,40 @@
+/* I, Sukhmanjeet Singh Student ID 000838215, verify that this is my own work and i did not copy from somewhere else */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    transition: all 4s ease-in-out;
+}
+
 img {
     width: 30%;
+    cursor: pointer;
 }
 
 #countDown {
     background-color: blue;
-    color: white;
-    width: 80px;
-    
+    color: white;    
 }
 
 .d-flex {
     height:300px;
+}
+
+.clicked {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: translateZ(0);
+    }
+    10%, 30%, 50%, 70%, 90% {        
+        transform: translate3d(-10px,0,0);
+    }
+    20%, 40%, 60%, 80% {        
+        transform: translate3d(10px,0,0);
+    }
 }
 
 @media screen and (max-width: 532px) {

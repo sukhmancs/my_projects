@@ -9,6 +9,10 @@ body {
     transition: all 4s ease-in-out;
 }
 
+i {
+    cursor: pointer;
+}
+
 .container a {
     display: inline-block;
     text-decoration: none;
@@ -41,6 +45,8 @@ section {
     top: 30%;
     left: 95%;
     background: grey;
+    box-shadow: 2px 2px 4px 0px #006773 !important;
+    transition: all 0.5s linear;
 }
 
 .container .nav-link {
@@ -49,7 +55,9 @@ section {
 
 .nav a:hover {
     background-color: aquamarine;
-    transform: scale(1.1);
+    transform: scale(1.08);
+    box-shadow: 15px 15px 40px 20px rgba(0,0, 0, 0.4);
+    border-radius: 5px;
 }
 
 @media screen and (max-width:990px) {
@@ -59,6 +67,11 @@ section {
     
     .container {
         margin-top: 0px !important;
+    }
+
+    button {
+        box-shadow: 2px 2px 4px 0px #006773 !important;
+        transition: all 0.5s linear;
     }
 }
 

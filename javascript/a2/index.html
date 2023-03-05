@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
         <!-- custom css and javascript files -->
         <link rel="stylesheet" href="style.css">
@@ -78,12 +79,19 @@
                 </div>
 
                 <!-- Flex item 3, Flex box-->
-                <div class="p-2 d-flex flex-wrap shadow rounded">
+                <div class="p-2 my-shadow d-flex flex-wrap shadow rounded">
 
                     <!-- Flex item 1, card 1-->
                     <div class="p-2 card shadow border-0 m-3">
-                        <h5 class="card-title">Group 1 - Question 1
-                            <a href="#" data-toggle="tooltip" title="Read the input from the document, if the input is numeric and if the input is 0, or if it’s between 13 and 17 inclusive, output “In range” otherwise output “Out of range”. If it’s not a number output “Not a number”."><i class="fas fa-question-circle animate__animated animate__bounce animate__repeat-2 animate__delay-3s 2"></i></a>
+                        <h5 class="card-title">Group 1 - Question 1                            
+                            <i class="fas fa-question-circle" data-toggle="modal" data-target=".bd-2-modal-lg"></i>
+                            <div class="modal fade bd-2-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content p-3 h6">
+                                  Read the input from the document, if the input is numeric and if the input is 0, or if it’s between 13 and 17 inclusive, output “In range” otherwise output “Out of range”. If it’s not a number output “Not a number”.
+                                </div>
+                              </div>
+                            </div> 
                         </h5>
                         <label for="g1_q1_input">Input :</label>
                         <input type="text" id="g1_q1_input" onchange="checkInput()" placeholder="Ex. 13 or 0">
@@ -93,8 +101,15 @@
 
                     <!-- Flex item 2, card 2-->
                     <div class="p-2 card border-0 shadow m-3" >
-                        <h5 class="card-title">Group 1 - Question 3
-                            <a href="#" data-toggle="tooltip" title="Read the input from the document and interpret it as the length of the side of a square if it is numeric and greater than or equal to 0. Output the perimeter (4*side) and area (side*side) of the square. If it is not a number output “Can’t calculate”."><i class="fas fa-question-circle"></i></a>
+                        <h5 class="card-title">Group 1 - Question 3                            
+                            <i class="fas fa-question-circle" data-toggle="modal" data-target=".bd-3-modal-lg"></i>
+                            <div class="modal fade bd-3-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content p-3 h6">
+                                  Read the input from the document and interpret it as the length of the side of a square if it is numeric and greater than or equal to 0. Output the perimeter (4*side) and area (side*side) of the square. If it is not a number output “Can’t calculate”.
+                                </div>
+                              </div>
+                            </div> 
                         </h5>
                         <label for="g1_q3_input">Input :</label>
                         <input type="text" id="g1_q3_input" onchange="calculateArea()" placeholder="Ex. 5">
@@ -104,8 +119,15 @@
                     
                     <!-- Flex item 3, card 3-->
                     <div class="p-2 card shadow border-0 m-3">
-                        <h5 class="card-title">Group 2 - Question 1
-                            <a href="#" data-toggle="tooltip" title="Read the input from the document and if the input is “a”, “e”, “i”, “o”, or “u” output “A Vowel”. If the input is “y” output “Sometimes”. In all other cases output “Not a vowel”. Your function should be case insensitive, i.e., “A” or “a” would both show “A Vowel”."><i class="fas fa-question-circle"></i></a>
+                        <h5 class="card-title">Group 2 - Question 1                            
+                            <i class="fas fa-question-circle" data-toggle="modal" data-target=".bd-4-modal-lg"></i>
+                            <div class="modal fade bd-4-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content p-3 h6">
+                                  Read the input from the document and if the input is “a”, “e”, “i”, “o”, or “u” output “A Vowel”. If the input is “y” output “Sometimes”. In all other cases output “Not a vowel”. Your function should be case insensitive, i.e., “A” or “a” would both show “A Vowel”.
+                                </div>
+                              </div>
+                            </div> 
                         </h5>
                         <label for="g2_q1_input">Input :</label>
                         <input type="text" onchange="checkVowel()" id="g2_q1_input" placeholder="Ex. a or y">
@@ -115,8 +137,15 @@
 
                     <!-- Flex item 4, card 4-->
                     <div class="p-2 card shadow border-0 m-3">
-                        <h5 class="card-title">Group 2 - Question 2
-                            <a href="#" data-toggle="tooltip" title="Read the input from the document. If it is an integer, split the absolute value of the integer apart and add up all the digits. If the resulting sum is greater than 9, repeat this process until the result is a single digit. Output the result of the calculation. If the original input was not an integer output “Bad input.”"><i class="fas fa-question-circle"></i></a>
+                        <h5 class="card-title">Group 2 - Question 2                             
+                            <i class="fas fa-question-circle" data-toggle="modal" data-target=".bd-5-modal-lg"></i>
+                            <div class="modal fade bd-5-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content p-3 h6">
+                                  Read the input from the document. If it is an integer, split the absolute value of the integer apart and add up all the digits. If the resulting sum is greater than 9, repeat this process until the result is a single digit. Output the result of the calculation. If the original input was not an integer output “Bad input.”
+                                </div>
+                              </div>
+                            </div>              
                         </h5>
                         <label for="g2_q2_input">Input :</label>
                         <input type="text" onchange="calculateSum()" id="g2_q2_input" placeholder="Ex. 55">
@@ -126,9 +155,16 @@
 
                     <!-- Flex item 5, card 5-->
                     <div class="p-2 card shadow border-0 m-3">
-                        <h5 class="card-title">Group 3 - Question 1
-                            <a href="." data-toggle="tooltip" title="Read the input from the document. This string must be between 10 and 20 characters long, inclusive, and consist of only 0’s and 1’s. If the string does not meet these conditions, output the result 0. If the input is valid then interpret it as a binary number. Using only loops and substring operations calculate the integer value of the binary number. For simplicity, we will assume “little endian” numbers ... the smallest number is on the left and get bigger moving to the right. Recall that binary values are powers of 2, with the first few values being 20 = 1, 21 = 2, 20 + 21 = 3, etc. "><i class="fas fa-question-circle"></i></a>
-                        </h5>
+                          <h5 class="card-title">Group 3 - Question 1                             
+                            <i class="fas fa-question-circle" data-toggle="modal" data-target=".bd-1-modal-lg"></i>
+                            <div class="modal fade bd-1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                <div class="modal-content p-3 h6">
+                                  Read the input from the document. This string must be between 10 and 20 characters long, inclusive, and consist of only 0’s and 1’s. If the string does not meet these conditions, output the result 0. If the input is valid then interpret it as a binary number. Using only loops and substring operations calculate the integer value of the binary number. For simplicity, we will assume “little endian” numbers ... the smallest number is on the left and get bigger moving to the right. Recall that binary values are powers of 2, with the first few values being 20 = 1, 21 = 2, 20 + 21 = 3, etc. "
+                                </div>
+                              </div>
+                            </div> 
+                        </h5>                      
                         <label for="g3_q1_input">Input :</label>
                         <input type="text" onchange="binaryToDecimal()" id="g3_q1_input" placeholder="Ex. 110111000010100">
                         <button id="g3_q1_check" onclick="binaryToDecimal()" type="button" class="btn btn-primary m-2">Check</button>
