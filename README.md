@@ -1,8 +1,9 @@
 # my_projects
-[![Open In Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github.com/Sukhman723/my_projects/)
 The Directory structure of my projects repository is as follows:
 ### google_colab:
 This folder contains projects finished using Google Colaboratory. It includes:
+
+[![Open In Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github.com/Sukhman723/my_projects/blob/main/google_colab/Data_exploration_using_titanic_dataset.ipynb)
 - Chat_bot_nltk.ipynb: This notebook contains code for simple chatbot using nltk. 
 - sentiment_analysis_with_trax.ipynb: This notebook contains code for a Twitter sentiment analysis machine learning model using trax library. 
 - sentiment_analysis_naive_byes.ipynb: This notebook is a simpler version of Twitter sentiment analysis using naive byes.
