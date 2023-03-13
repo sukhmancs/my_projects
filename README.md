@@ -1,4 +1,5 @@
 # my_projects
+[![Open In Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github.com/Sukhman723/my_projects/)
 The Directory structure of my projects repository is as follows:
 ### google_colab:
 This folder contains projects finished using Google Colaboratory. It includes:
