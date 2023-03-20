@@ -12,5 +12,11 @@ This folder contains projects finished using Google Colaboratory. It includes:
 - Data_exploration_using_titanic_dataset.ipynb: This notebook contains some of the most important steps to understand data. It also contains code to deal with duplicates, recognizing and treating missing or NAN values.
 - TypingSpeedTester.ipynb: Basic typing speed tester. 
 - patient_survived_prediction.ipynb: Using custom data to predict patient survival rate based on number of diseases he have. 
+### Projects I am Currently working on:
+- Machine_translation_encoder_decoder_with_attention: A powerful machine translation system to translate from english to German. 
+- named_entity_recognition_with_trax: A short but complex system to detect named entity written using trax library.
+- question_duplicates_using_siamese_network_in_trax: System to detect whether two questions are duplicates of each other. Really helpful in platform to detect any if quesition posted already exist to only keep approriate copy of just one question. 
+- Text_generation_using_GRU_using_trax: Creating long text based on Summeries or the tags.
+- Translation(Linear transformation of word vectors): Translation system. 
 ### html_css:
 This folder contains projects about HTML/CSS, javascript and Bootstrap. It contains Lab3, Lab4, Lab5, Lab6 folders each having unique website designs.  
