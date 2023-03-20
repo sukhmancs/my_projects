@@ -12,6 +12,10 @@ This folder contains projects finished using Google Colaboratory. It includes:
 - Data_exploration_using_titanic_dataset.ipynb: This notebook contains some of the most important steps to understand data. It also contains code to deal with duplicates, recognizing and treating missing or NAN values.
 - TypingSpeedTester.ipynb: Basic typing speed tester. 
 - patient_survived_prediction.ipynb: Using custom data to predict patient survival rate based on number of diseases he have. 
+- Gradient_descent.ipynb: Gradient Descent algorithm from scratch using Python.
+- auto_complete_using_n_gram.ipynb: Complete a sentence based on the context. 
+- spell_checker.ipynb: Check if the spelling of a typed english word are correct. 
+
 ### Projects I am Currently working on:
 - Machine_translation_encoder_decoder_with_attention: A powerful machine translation system to translate from english to German. 
 - named_entity_recognition_with_trax: A short but complex system to detect named entity written using trax library.
