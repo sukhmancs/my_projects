@@ -2,7 +2,8 @@
 ## Introduction
 
 Welcome to my Github repository where I showcase my programming projects. In this repository, you will find a directory structure that contains different projects that I have worked on. Each project is contained in a separate folder, and I have also categorized the projects based on the programming language used.
-Directory Structure
+
+## Directory Structure
 
 The directory structure of this repository is as follows:
 
@@ -10,8 +11,8 @@ The directory structure of this repository is as follows:
 
 - `HTML/CSS/Java/Javascript`: This folder contains projects specific to the programming language.
 
-Projects
-Google Colab
+## Projects
+### Google Colab
 
 This project contains various notebooks showcasing different machine learning models and algorithms. Some of the notable projects include:
 - `Chat_bot_nltk.ipynb`: A simple chatbot using nltk.
