@@ -37,7 +37,7 @@ This section contains various projects that I am currently working on, including
 
 ## HTML/CSS/Java/Javascript
 
-Folders Specific to the Programming Language: This section contains projects specific to the programming language.
+__Folders Specific to the Programming Language:__ This section contains projects specific to the programming language.
 
 ## Conclusion
 
