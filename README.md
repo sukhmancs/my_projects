@@ -34,6 +34,7 @@ This section contains various projects that I am currently working on, including
 - `question_duplicates_using_siamese_network_in_trax`: A system to detect whether two questions are duplicates of each other, which is helpful in platforms to detect if a question posted already exists to keep only one appropriate copy of the question.
 - `Text_generation_using_GRU_using_trax`: Creating long text based on summaries or tags.
 - `Translation(Linear transformation of word vectors)`: A translation system.
+- `Transformer summerizer`: Attention based transformer to summerize long textual data. 
 
 ## HTML/CSS/Java/Javascript
 
