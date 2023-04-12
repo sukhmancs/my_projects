@@ -1,0 +1,112 @@
+/* This code sets styles for a webpage */
+
+/* Author information*/
+/* I, Sukhmanjeet Singh Student ID 000838215, verify that this is my own work and i did not copy from somewhere else */
+
+/* Styles for the body element*/
+body {
+font-family: 'Poppins', sans-serif;/* Use the Poppins font for the body text*/
+font-size: 1.1rem;/* Set the font size to 1.1 rem*/
+transition: all 4s ease-in-out;/* Add a transition effect to all elements that change over 4 seconds*/
+margin: 0;/* Remove the default margin */
+}
+
+/* Styles for the header element*/
+header {
+background-color: #333;/* Set the background color to dark gray*/
+color: white;/* Set the text color to white*/
+text-align: center;/* Center the text*/
+padding: 1em;/* Add padding */
+}
+
+/* Styles for buttons element */
+.range-shadow {
+    box-shadow: 2px 2px 4px 0px #006773; /* box shadow with somewhat green color  */
+    transition: all 0.3s linear; /* transition effect */
+    transform: scale(1.01); /* scale transform */
+}
+
+/* Hover effect for buttons element */
+.range-shadow:hover {
+    box-shadow: 1px 1px 1px rgba(0,0, 0, 0.4); /* box shadow with different color  */
+    transition: all 0.3s linear; /* transition */
+    transform: scale(1); /* transform backward */
+}
+
+/* Styles for the main element*/
+main {
+display: flex;/* Use flexbox to align the items*/
+flex-wrap: nowrap;/* Prevent items from wrapping*/
+justify-content: space-around;/* Add space between the items*/
+padding: 1em;/* Add padding */
+}
+
+/* Styles for the input[type="text"] element*/
+input[type="text"] {
+padding: 0.5em;/* Add padding*/
+margin-right: 0.5em;/* Add margin*/
+flex: 1;/* Use flexbox to take up available space*/
+min-width: 0;/* Set the minimum width to 0 */
+}
+
+/* Styles for the button element*/
+button {
+padding: 0.5em;/* Add padding*/
+margin-right: 0.5em;/* Add margin */
+}
+
+/* Styles for the container element*/
+.container {
+display: flex;/* Use flexbox to align the items*/
+flex-wrap: wrap;/* Allow items to wrap*/
+justify-content: space-around;/* Add space between the items*/
+margin-top: 1em;/* Add margin */
+}
+
+/* Styles for the item element*/
+.item {
+flex-basis: 30%;/* Set the basis for the flexbox*/
+margin-bottom: 1em;/* Add margin*/
+padding: 1em;/* Add padding*/
+border: 1px solid #ccc;/* Add a border */
+}
+
+/* Styles for the h2 element inside the item element*/
+.item h2 {
+text-align: center;/* Center the text */
+}
+
+/* Styles for the img element inside the item element*/
+.item img {
+display: block;/* Make the image a block element*/
+margin: auto;/* Center the image*/
+max-width: 100%;/* Set the maximum width to 100%*/
+height: auto;/* Automatically adjust the height */
+}
+
+/* Styles for the table element*/
+table {
+margin-top: 1em;/* Add margin*/
+border-collapse: collapse;/* Collapse the borders*/
+width: 100%;/* Set the width to 100% */
+}
+
+/* Styles for the th and td elements inside the table*/
+th, td {
+padding: 0.5em;/* Add padding*/
+border: 1px solid #ccc;/* Add a border*/
+text-align: center;/* Center the text */
+}
+
+/* Styles for the footer element*/
+footer {
+background-color: #333;/* Set the background color to dark gray*/
+color: white;/* Set the text color to white*/
+text-align: center;/* Center the text*/
+padding: 1em;/* Add padding */
+}
+
+/* Style for the elements with id section1 and section2*/
+#section1, #section2 {
+    font-style: italic; /* Set the font style to italic*/
+}
