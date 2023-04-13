@@ -62,7 +62,7 @@ The directory structure of this repository is as follows:
 - `HTML/CSS/Java/Javascript`: This folder contains projects specific to the programming language.
 
 ## Projects
-### Google Colab
+### Made using Google Colaboratory:
 
 This project contains various notebooks showcasing different machine learning models and algorithms. Some of the notable projects include:
 - `Chat_bot_nltk.ipynb`: A simple chatbot using nltk.
