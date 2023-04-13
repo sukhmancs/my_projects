@@ -64,7 +64,7 @@ The directory structure of this repository is as follows:
 ## Projects
 ### Made using Google Colaboratory:
 
-This project contains various notebooks showcasing different machine learning models and algorithms. Some of the notable projects include:
+`google_colab` folder contains various notebooks showcasing different machine learning models and algorithms. Some of the notable projects include:
 - `Chat_bot_nltk.ipynb`: A simple chatbot using nltk.
 - `sentiment_analysis_with_trax.ipynb`: A Twitter sentiment analysis machine learning model using trax library.
 - `sentiment_analysis_naive_byes.ipynb`: A simpler version of Twitter sentiment analysis using naive byes.
