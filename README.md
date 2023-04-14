@@ -15,15 +15,15 @@
   </div>
   <img src="https://komarev.com/ghpvc/?username=sukhmancs&style=flat-square&color=blue" alt=""/>
   <h1>
-  hey there
-  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
-</h1>
+    hey there
+    <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+  </h1>
 </div>
 
 Welcome to my Github repository where I showcase my programming projects. In this repository, you will find a directory structure that contains different projects that I have worked on. Each project is contained in a separate folder, and I have also categorized the projects based on the programming language used.
 
 ---
-### :hammer_and_wrench: Languages and Tools :
+### :hammer_and_wrench: Languages and Tools
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
@@ -46,7 +46,7 @@ Welcome to my Github repository where I showcase my programming projects. In thi
 
 ---
 
-## :fire: My Stats:
+### :fire: My Stats 
 
 [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=sukhmancs&theme=dark)](https://git.io/streak-stats)
 
@@ -54,14 +54,15 @@ Welcome to my Github repository where I showcase my programming projects. In thi
 
 ---
 
-## :file_folder: Directory Structure
+### :file_folder: Directory Structure 
 The directory structure of this repository is as follows:
 
 - `google_colab`: This folder contains projects that were finished using Google Colaboratory. It includes various projects, such as a simple chatbot using nltk, sentiment analysis using trax library, math question solver, data exploration using the Titanic dataset, typing speed tester, patient survival prediction, and more.
 
 - `HTML/CSS/Java/Javascript`: This folder contains projects specific to the programming language.
 
-## Projects
+---
+### Projects 
 ### Made using Google Colaboratory:
 
 `google_colab` folder contains various notebooks showcasing different machine learning models and algorithms. Some of the notable projects include:
@@ -77,7 +78,8 @@ The directory structure of this repository is as follows:
 - `auto_complete_using_n_gram.ipynb`: Completing a sentence based on the context.
 - `spell_checker.ipynb`: Checking if the spelling of a typed English word is correct.
 
-## Projects I am Currently Working On: 
+---
+### Projects I am Currently Working On 
 This section contains various projects that I am currently working on, including:
 - `Machine_translation_encoder_decoder_with_attention`: A powerful machine translation system to translate from English to German.
 - `named_entity_recognition_with_trax`: A short but complex system to detect named entities written using the trax library.
@@ -86,10 +88,12 @@ This section contains various projects that I am currently working on, including
 - `Translation(Linear transformation of word vectors)`: A translation system.
 - `Transformer summerizer`: Attention based transformer to summerize long textual data. 
 
-## HTML/CSS/Java/Javascript
+---
+### HTML/CSS/Java/Javascript 
 
 __Folders Specific to the Programming Language:__ This section contains projects specific to the programming language.
 
-## Conclusion
+---
+### Conclusion
 
 This repository showcases a wide range of my programming skills, from basic to complex machine learning models and algorithms. I hope you find these projects helpful and informative. Thank you for your interest in my work!
